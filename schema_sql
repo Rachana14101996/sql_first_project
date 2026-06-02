@@ -1,1 +1,17 @@
+-- Create a simple database and table
+CREATE DATABASE Rach;
+USE Rach;
+
+CREATE TABLE employees (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    role VARCHAR(50),
+    salary DECIMAL(10,2)
+);
+
+INSERT INTO employees (name, role, salary)
+VALUES ('Radha', 'Developer', 60000.00),
+       ('Balu', 'Manager', 80000.00);
+
+SELECT * FROM employees;
 
